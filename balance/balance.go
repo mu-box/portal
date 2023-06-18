@@ -1,3 +1,4 @@
+//go:build linux || darwin
 // +build linux darwin
 
 // balance handles the load balancing portion of portal.
@@ -11,8 +12,8 @@ import (
 
 	"github.com/coreos/go-iptables/iptables"
 
-	"github.com/nanopack/portal/config"
-	"github.com/nanopack/portal/core"
+	"github.com/mu-box/portal/config"
+	"github.com/mu-box/portal/core"
 )
 
 var (

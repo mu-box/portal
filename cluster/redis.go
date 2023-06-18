@@ -11,11 +11,11 @@ import (
 
 	"github.com/garyburd/redigo/redis"
 
-	"github.com/nanopack/portal/balance"
-	"github.com/nanopack/portal/config"
-	"github.com/nanopack/portal/core"
-	"github.com/nanopack/portal/core/common"
-	"github.com/nanopack/portal/database"
+	"github.com/mu-box/portal/balance"
+	"github.com/mu-box/portal/config"
+	"github.com/mu-box/portal/core"
+	"github.com/mu-box/portal/core/common"
+	"github.com/mu-box/portal/database"
 )
 
 var (
@@ -649,8 +649,8 @@ func (r *Redis) GetServices() ([]core.Service, error) {
 	members, _ := redis.Strings(conn.Do("SMEMBERS", "members"))
 	if len(members) == 0 {
 		// should only happen on new cluster
-		// assume i'm ok to be master so don't reset imported services
-		config.Log.Trace("[cluster] - Assuming OK to be master, using services from my database...")
+		// assume i'm ok to be primary so don't reset imported services
+		config.Log.Trace("[cluster] - Assuming OK to be primary, using services from my database...")
 		return common.GetServices()
 	}
 	for i := range members {
@@ -750,8 +750,8 @@ func (r *Redis) GetRoutes() ([]core.Route, error) {
 	members, _ := redis.Strings(conn.Do("SMEMBERS", "members"))
 	if len(members) == 0 {
 		// should only happen on new cluster
-		// assume i'm ok to be master so don't reset imported routes
-		config.Log.Trace("[cluster] - Assuming OK to be master, using routes from my database...")
+		// assume i'm ok to be primary so don't reset imported routes
+		config.Log.Trace("[cluster] - Assuming OK to be primary, using routes from my database...")
 		return common.GetRoutes()
 	}
 	for i := range members {
@@ -847,8 +847,8 @@ func (r *Redis) GetCerts() ([]core.CertBundle, error) {
 	members, _ := redis.Strings(conn.Do("SMEMBERS", "members"))
 	if len(members) == 0 {
 		// should only happen on new cluster
-		// assume i'm ok to be master so don't reset imported certs
-		config.Log.Trace("[cluster] - Assuming OK to be master, using certs from my database...")
+		// assume i'm ok to be primary so don't reset imported certs
+		config.Log.Trace("[cluster] - Assuming OK to be primary, using certs from my database...")
 		return common.GetCerts()
 	}
 	for i := range members {

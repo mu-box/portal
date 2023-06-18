@@ -25,8 +25,8 @@ echo "Building portal..."
 # export PATH=/usr/local/go-1.7.6/bin:$PATH
 
 # should be built with go1.7.x until tls regression is resolved. also https://github.com/golang/go/issues/21133
-gox -ldflags="-s -X github.com/nanopack/portal/commands.tag=$(getCurrTag)
-  -X github.com/nanopack/portal/commands.commit=$(getCurrCommit)" \
+gox -ldflags="-s -X github.com/mu-box/portal/commands.tag=$(getCurrTag)
+  -X github.com/mu-box/portal/commands.commit=$(getCurrCommit)" \
   -osarch "linux/amd64" -output="./build/{{.OS}}/{{.Arch}}/portal"
   # -osarch "darwin/amd64 linux/amd64 windows/amd64" -output="./build/{{.OS}}/{{.Arch}}/portal"
 

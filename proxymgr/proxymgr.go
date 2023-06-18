@@ -3,7 +3,7 @@
 // handles the adding of 'certs' (key/cert sets) for a secure reverse proxy router
 package proxymgr
 
-import "github.com/nanopack/portal/core"
+import "github.com/mu-box/portal/core"
 
 type proxyable interface {
 	Init() error
@@ -15,7 +15,7 @@ var (
 )
 
 func Init() error {
-	Proxy = &Nanobox{}
+	Proxy = &Microbox{}
 	return Proxy.Init()
 }
 

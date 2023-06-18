@@ -6,11 +6,11 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/nanobox-io/golang-scribble"
+	scribble "github.com/mu-box/golang-scribble"
 	"github.com/twinj/uuid"
 
-	"github.com/nanopack/portal/config"
-	"github.com/nanopack/portal/core"
+	"github.com/mu-box/portal/config"
+	"github.com/mu-box/portal/core"
 )
 
 type (

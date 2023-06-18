@@ -4,9 +4,9 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/nanopack/portal/cluster"
-	"github.com/nanopack/portal/core"
-	"github.com/nanopack/portal/core/common"
+	"github.com/mu-box/portal/cluster"
+	"github.com/mu-box/portal/core"
+	"github.com/mu-box/portal/core/common"
 )
 
 func postCert(rw http.ResponseWriter, req *http.Request) {

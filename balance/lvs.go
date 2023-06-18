@@ -1,3 +1,4 @@
+//go:build linux
 // +build linux
 
 package balance
@@ -6,9 +7,9 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/nanobox-io/golang-lvs"
+	"github.com/mu-box/golang-lvs"
 
-	"github.com/nanopack/portal/core"
+	"github.com/mu-box/portal/core"
 )
 
 var (

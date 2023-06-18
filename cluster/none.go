@@ -1,9 +1,9 @@
 package cluster
 
 import (
-	"github.com/nanopack/portal/core"
-	"github.com/nanopack/portal/core/common"
-	"github.com/nanopack/portal/database"
+	"github.com/mu-box/portal/core"
+	"github.com/mu-box/portal/core/common"
+	"github.com/mu-box/portal/database"
 )
 
 type (

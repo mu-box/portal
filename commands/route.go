@@ -8,7 +8,7 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/nanopack/portal/core"
+	"github.com/mu-box/portal/core"
 )
 
 // add-route

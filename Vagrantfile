@@ -2,7 +2,7 @@
 # vi: set ft=ruby :
 
 # determine vagrant provider
-ENV['VAGRANT_DEFAULT_PROVIDER'] = ENV['NANOBOX_BUILD_VAGRANT_PROVIDER'] || 'virtualbox'
+ENV['VAGRANT_DEFAULT_PROVIDER'] = ENV['MICROBOX_BUILD_VAGRANT_PROVIDER'] || 'virtualbox'
 
 Vagrant.configure('2') do |config|
 
@@ -18,7 +18,7 @@ Vagrant.configure('2') do |config|
     v.vmx["numvcpus"] = "1"
     v.gui = false
     override.vm.box = "trusty64_vmware"
-    override.vm.box_url = 'https://github.com/pagodabox/vagrant-packer-templates/releases/download/v0.2.0/trusty64_vmware.box'
+    override.vm.box_url = 'https://github.com/mu-box/vagrant-packer-templates/releases/download/v0.2.0/trusty64_vmware.box'
   end
 
   config.vm.network "private_network", type: "dhcp"

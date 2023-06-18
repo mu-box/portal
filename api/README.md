@@ -1,5 +1,5 @@
-[![portal logo](http://nano-assets.gopagoda.io/readme-headers/portal.png)](http://nanobox.io/open-source#portal)  
-[![Build Status](https://travis-ci.org/nanopack/portal.svg)](https://travis-ci.org/nanopack/portal)
+[![portal logo](http://microbox.rocks/assets/readme-headers/portal.png)](http://microbox.cloud/open-source#portal)
+[![Build Status](https://github.com/mu-box/portal/actions/workflows/ci.yaml/badge.svg)](https://github.com/mu-box/portal/actions)
 
 # Portal
 
@@ -216,4 +216,4 @@ $ curl -k -H "X-AUTH-TOKEN:" https://127.0.0.1:8443/vips \
 [{"ip":"192.168.0.100","interface":"eth0","alias":"eth0:1"}]
 ```
 
-[![portal logo](http://nano-assets.gopagoda.io/open-src/nanobox-open-src.png)](http://nanobox.io/open-source)
+[![portal logo](http://microbox.rocks/assets/open-src/microbox-open-src.png)](http://microbox.cloud/open-source)

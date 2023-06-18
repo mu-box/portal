@@ -1,11 +1,11 @@
-# Portal 
-[![Build Status](https://travis-ci.org/nanopack/portal.svg)](https://travis-ci.org/nanopack/portal)
-[![GoDoc](https://godoc.org/github.com/nanopack/portal?status.svg)](https://godoc.org/github.com/nanopack/portal)
+# Portal
+[![Build Status](https://github.com/mu-box/portal/actions/workflows/ci.yaml/badge.svg)](https://github.com/mu-box/portal/actions)
+[![GoDoc](https://godoc.org/github.com/mu-box/portal?status.svg)](https://godoc.org/github.com/mu-box/portal)
 
 Portal is an api-driven, in-kernel layer 2/3 load balancer.
 
 ## Status
-Complete/Experimental
+Complete
 
 ## Usage:
 
@@ -71,7 +71,7 @@ Flags:
 Use "portal [command] --help" for more information about a command.
 ```
 
-For usage examples, see [Api](api/README.md) and/or [Cli](commands/README.md) readme  
+For usage examples, see [API](api/README.md) and/or [CLI](commands/README.md) readme
 
 ### As a Server
 To start portal as a server run:
@@ -134,10 +134,10 @@ An optional config file can also be passed on startup:
 | **Post** /vips | Add new vip | json vip object | json vip object |
 | **Put** /vips | Reset the list of vips | json array of vip objects | json array of vip objects |
 
-- **service_id** is a formatted combination of service info: type-host-port. (tcp-127_0_0_3-80)  
-- **server_id** is a formatted combination of server info: host-port. (192_0_0_3-8080)  
+- **service_id** is a formatted combination of service info: type-host-port. (tcp-127_0_0_3-80)
+- **server_id** is a formatted combination of server info: host-port. (192_0_0_3-8080)
 
-For examples, see [the api's readme](api/README.md)  
+For examples, see [the api's readme](api/README.md)
 
 ## Data types:
 ### Service:
@@ -295,9 +295,6 @@ json:
 Fields:
  - **msg**: Success message
 
-### Contributing
-Portal uses [`govendor`](https://github.com/kardianos/govendor) to manage dependencies. After clone, run `govendor sync` to ensure you have the proper dependencies prior to building.
-
 ## Todo
 - vip testing
 - balance vips across cluster
@@ -317,4 +314,4 @@ Portal uses [`govendor`](https://github.com/kardianos/govendor) to manage depend
 - Users can now add vips to portal
 - Portal now uses the service host for server's hosts that are "127.0.0.1"
 
-[![portal logo](http://nano-assets.gopagoda.io/open-src/nanobox-open-src.png)](http://nanobox.io/open-source)
+[![portal logo](http://microbox.rocks/assets/open-src/microbox-open-src.png)](http://microbox.cloud/open-source)

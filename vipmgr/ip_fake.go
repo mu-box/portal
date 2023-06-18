@@ -1,11 +1,13 @@
+//go:build windows || darwin
 // +build windows darwin
+
 // this fake lvs enables portal to compile for darwin/windows
 
 package vipmgr
 
 import (
-	"github.com/nanopack/portal/config"
-	"github.com/nanopack/portal/core"
+	"github.com/mu-box/portal/config"
+	"github.com/mu-box/portal/core"
 )
 
 type ip struct{}

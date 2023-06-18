@@ -9,8 +9,8 @@ import (
 
 	_ "github.com/lib/pq"
 
-	"github.com/nanopack/portal/config"
-	"github.com/nanopack/portal/core"
+	"github.com/mu-box/portal/config"
+	"github.com/mu-box/portal/core"
 )
 
 type (

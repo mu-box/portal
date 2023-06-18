@@ -1,7 +1,7 @@
 // vipmgr handles the adding of 'vips'
 package vipmgr
 
-import "github.com/nanopack/portal/core"
+import "github.com/mu-box/portal/core"
 
 type vipable interface {
 	Init() error

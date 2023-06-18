@@ -1,4 +1,4 @@
-// cluster handles the multi-master clustering of portal.
+// cluster handles the multi-primary clustering of portal.
 package cluster
 
 import (
@@ -7,8 +7,8 @@ import (
 	"fmt"
 	"net/url"
 
-	"github.com/nanopack/portal/config"
-	"github.com/nanopack/portal/core"
+	"github.com/mu-box/portal/config"
+	"github.com/mu-box/portal/core"
 )
 
 var (

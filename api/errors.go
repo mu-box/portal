@@ -3,7 +3,7 @@ package api
 import (
 	"net/http"
 
-	"github.com/nanobox-io/nanobox-router"
+	"github.com/mu-box/microbox-router"
 )
 
 // todo: update router so it uses map[string]string|byte for errors

@@ -5,10 +5,10 @@ import (
 	"io/ioutil"
 	"net/http"
 
-	"github.com/nanopack/portal/cluster"
-	"github.com/nanopack/portal/config"
-	"github.com/nanopack/portal/core"
-	"github.com/nanopack/portal/core/common"
+	"github.com/mu-box/portal/cluster"
+	"github.com/mu-box/portal/config"
+	"github.com/mu-box/portal/core"
+	"github.com/mu-box/portal/core/common"
 )
 
 func parseReqServer(req *http.Request) (*core.Server, error) {

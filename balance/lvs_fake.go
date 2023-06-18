@@ -1,9 +1,11 @@
+//go:build windows || darwin
 // +build windows darwin
+
 // this fake lvs enables portal to compile for darwin/windows
 
 package balance
 
-import "github.com/nanopack/portal/core"
+import "github.com/mu-box/portal/core"
 
 type (
 	Lvs struct {

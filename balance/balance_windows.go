@@ -1,3 +1,4 @@
+//go:build windows
 // +build windows
 
 // balance handles the load balancing portion of portal.
@@ -8,8 +9,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/nanopack/portal/config"
-	"github.com/nanopack/portal/core"
+	"github.com/mu-box/portal/config"
+	"github.com/mu-box/portal/core"
 )
 
 var (
